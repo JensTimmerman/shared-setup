@@ -35,7 +35,7 @@ from distutils.core import setup
 import glob
 
 setup(name="shared_setup",
-      version="0.1",
+      version="0.2",
       description="A common setup tool for building RPMs for our systems.",
       long_description="""All our python tools are built in the same fashion.
 - we like to have a single place to maintain the code
@@ -47,6 +47,6 @@ setup(name="shared_setup",
       author_email="hpc-admin@lists.ugent.be",
       scripts=glob.glob(os.path.join("bin", "*")),
       package_dir={'vsc': 'lib/vsc'},
-      packages=['vsc', 'vsc.install'],
+      packages=['vsc.install'],
       namespace_packages=['vsc'],
       url="http://www.ugent.be/hpc")
