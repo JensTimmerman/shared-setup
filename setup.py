@@ -47,6 +47,6 @@ setup(name="shared_setup",
       author_email="hpc-admin@lists.ugent.be",
       scripts=glob.glob(os.path.join("bin", "*")),
       package_dir={'vsc': 'lib/vsc'},
-      packages=['vsc.install'],
+      packages=['vsc', 'vsc.install'],
       namespace_packages=['vsc'],
       url="http://www.ugent.be/hpc")
